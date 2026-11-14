@@ -68,6 +68,8 @@ try {
   await page.reload();
   check('Dashboard title', (await page.title()) === 'TIYA MADAN | CAT 2026');
   check('Dashboard lists five mocks', (await page.locator('.mock-card').count()) === 5);
+  const dashText = await page.locator('body').innerText();
+  check('No mock design labels visible to the candidate', !/Baseline|CAT 2020 reasoning|Advanced inference|Abstract RC and difficult VA|Exam-day simulation/i.test(dashText));
   check('Subtitle shown', (await page.locator('.brand-sub').innerText()).includes('VARC Examination Centre'));
   const hero = await page.locator('.candidate-hero').textContent();
   check('Dashboard shows candidate name, aspiration and motto', hero.includes('Tiya Madan') && hero.includes('Aspiring IIM Ahmedabad Student | CAT 2026') && hero.includes('Every question you solve brings you one step closer to the dream.'));

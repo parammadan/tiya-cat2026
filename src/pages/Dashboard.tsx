@@ -36,7 +36,7 @@ export default function Dashboard() {
               <article className="mock-card" key={m.id}>
                 <header>
                   <h2>{m.title}</h2>
-                  <span className="focus">{m.focus}</span>
+                  <span className="focus">VARC sectional</span>
                 </header>
                 <dl className="mock-meta">
                   <div><dt>Questions</dt><dd>24 ({m.mcqCount} MCQ · {m.titaCount} TITA)</dd></div>

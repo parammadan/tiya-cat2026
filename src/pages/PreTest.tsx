@@ -21,7 +21,7 @@ export default function PreTest({ mockId }: { mockId: number }) {
             <tbody>
               <tr><th>Candidate</th><td>{CANDIDATE}</td></tr>
               <tr><th>Examination</th><td>CAT 2026 — VARC Practice</td></tr>
-              <tr><th>Paper</th><td>{mock.title} ({mock.focus})</td></tr>
+              <tr><th>Paper</th><td>{mock.title}</td></tr>
               <tr><th>Section</th><td>Verbal Ability and Reading Comprehension (VARC)</td></tr>
               <tr><th>Duration</th><td>40 minutes</td></tr>
               <tr><th>Number of Questions</th><td>24 ({mock.mcqCount} MCQ, {mock.titaCount} TITA)</td></tr>

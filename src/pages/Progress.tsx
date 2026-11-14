@@ -76,14 +76,14 @@ export default function Progress() {
 
             <h2 className="section-title">Mock summary</h2>
             <table className="data-table">
-              <thead><tr><th>Mock</th><th>Focus</th><th>Attempts</th><th>Best</th><th>Latest</th><th>Latest accuracy</th></tr></thead>
+              <thead><tr><th>Mock</th><th>Attempts</th><th>Best</th><th>Latest</th><th>Latest accuracy</th></tr></thead>
               <tbody>
                 {MOCKS.map((m) => {
                   const as = done.filter((a) => a.mockId === m.id);
                   const last = as[as.length - 1];
                   return (
                     <tr key={m.id}>
-                      <td>{m.title}</td><td>{m.focus}</td><td>{as.length}</td>
+                      <td>{m.title}</td><td>{as.length}</td>
                       <td>{as.length ? `${Math.max(...as.map((a) => a.result!.score))}/${MAX_MARKS}` : '—'}</td>
                       <td>{last ? `${last.result!.score}/${MAX_MARKS}` : '—'}</td>
                       <td>{last ? pct(last.result!.accuracy) : '—'}</td>

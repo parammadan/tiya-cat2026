@@ -92,8 +92,7 @@ export default function Review({ attemptId, initialQ }: { attemptId: string; ini
             <button className="btn primary" disabled={idx < 0 || idx >= list.length - 1} onClick={() => go(list[idx + 1].number)}>Next</button>
           </div>
           <details className="paper-notes">
-            <summary>Paper notes and diagnostic guide for {mock.title}</summary>
-            <Html html={mock.introHtml} />
+            <summary>Diagnostic guide for {mock.title}</summary>
             {mock.strategyHtml && <><h4>Strategy note</h4><Html html={mock.strategyHtml} /></>}
             <h4>Diagnostic guide</h4>
             <Html html={mock.diagnosticHtml} />
