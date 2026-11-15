@@ -1,6 +1,6 @@
 # TIYA MADAN | CAT 2026: VARC Examination Centre
 
-**Live site:** https://parammadan.github.io/varc-practice-sim/ (deployed automatically from `main` by GitHub Actions; see `DEPLOY.md`).
+**Live site:** https://parammadan.github.io/tiya-cat2026/ (deployed automatically from `main` by GitHub Actions; see `DEPLOY.md`).
 
 This is a personal CAT-style computer-based-test simulator. It contains the five original VARC sectional mocks, each with 24 questions and a 40-minute limit. It is not affiliated with the IIMs or the official CAT.
 
