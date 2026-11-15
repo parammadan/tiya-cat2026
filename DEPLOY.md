@@ -2,8 +2,8 @@
 
 ## GitHub Pages (primary)
 
-- **Repository:** `parammadan/tiya-cat2026` (public)
-- **Site:** `https://parammadan.github.io/tiya-cat2026/`
+- **Repository:** `parammadan/varc-practice-sim` (public)
+- **Site:** `https://parammadan.github.io/varc-practice-sim/`
 
 ### How it deploys
 
@@ -15,7 +15,7 @@ The workflow `.github/workflows/deploy.yml` runs on every push to `main`. It can
 | Import the mocks from `content/mockN/*.md` | `npm run import` |
 | Validate all 120 questions, keys and explanations | `npm run validate` (fails the deploy on any error) |
 | Run the automated tests | `npm test` (Vitest) |
-| Type-check and build `dist/` | Vite base path `/tiya-cat2026/` |
+| Type-check and build `dist/` | Vite base path `/varc-practice-sim/` |
 | Publish | official `actions/upload-pages-artifact` and `actions/deploy-pages` |
 
 The app uses hash routes (`#/exam/...`), so refreshing any page and using browser back/forward work without server rewrites.
@@ -33,7 +33,7 @@ The app uses hash routes (`#/exam/...`), so refreshing any page and using browse
 3. **Commit and push to `main`.** GitHub redeploys in about 1–2 minutes. Progress shows in the repository's **Actions** tab.
 4. **Optional: check the live site.**
    ```bash
-   E2E_URL=https://parammadan.github.io/tiya-cat2026/ npm run e2e
+   E2E_URL=https://parammadan.github.io/varc-practice-sim/ npm run e2e
    ```
 
 ### Privacy
@@ -48,4 +48,4 @@ Attempt history is stored only in the browser on the device Tiya uses. Nothing i
 
 `npm run build` and upload the contents of `dist/` through **Workers & Pages → Create → Pages → Upload assets**.
 
-The production base path is `/tiya-cat2026/`. For a site served from a domain root, change `base` in `vite.config.ts` to `/` (or `./`) before building.
+The production base path is `/varc-practice-sim/`. For a site served from a domain root, change `base` in `vite.config.ts` to `/` (or `./`) before building.

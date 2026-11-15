@@ -5,9 +5,9 @@ import { mkdirSync } from 'node:fs';
 import { chromium } from 'playwright-core';
 
 const PORT = 4173;
-// E2E_URL=https://parammadan.github.io/tiya-cat2026/ runs the suite against the live site instead of a local preview.
+// E2E_URL=https://parammadan.github.io/varc-practice-sim/ runs the suite against the live site instead of a local preview.
 const LIVE = process.env.E2E_URL || '';
-const BASE = LIVE || `http://localhost:${PORT}/tiya-cat2026/`;
+const BASE = LIVE || `http://localhost:${PORT}/varc-practice-sim/`;
 const CHROME = process.env.CHROME_PATH || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 const SHOTS = new URL('./screenshots/', import.meta.url).pathname;
 mkdirSync(SHOTS, { recursive: true });
